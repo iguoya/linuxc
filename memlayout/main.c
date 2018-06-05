@@ -14,9 +14,9 @@ struct address_info {
 
 
 int main(int argc, char *argv[], char *envp[]) {
-//    for (int i = 0; envp[i] != NULL; ++i) {
-//        printf("%d : %s\n", i, envp[i]);
-//    }
+    for (int i = 0; envp[i] != NULL; ++i) {
+        printf("%d : %s\n", i, envp[i]);
+    }
 
     printf("int size:%ld, char size: %ld\n", sizeof(int), sizeof(char));
 
@@ -31,8 +31,8 @@ int main(int argc, char *argv[], char *envp[]) {
     char * local_malloc_point;
     local_malloc_point = malloc(1*1024*4);
 
-
-    struct address_info memory_type[13];
+    int test_range = 15;
+    struct address_info memory_type[test_range];
 
     memory_type[0].name = "text code (main address  low ??)";
     memory_type[0].address = main;
@@ -74,11 +74,19 @@ int main(int argc, char *argv[], char *envp[]) {
     memory_type[12].address = envp;
 
 
+    memory_type[13].name = "env data : path(high ?)";
+    memory_type[12].address = envp[0];
 
-    int address_rank[13];
-    for(int index = 0; index < 13; ++index) {
+
+    memory_type[14].name = "env data : path(high ?)";
+    memory_type[14].address = envp[83];
+
+
+
+    int address_rank[test_range];
+    for(int index = 0; index < test_range; ++index) {
         int low_than_me = 0;
-        for(int behind_me_index = 0; behind_me_index < 13; ++behind_me_index) {
+        for(int behind_me_index = 0; behind_me_index < test_range; ++behind_me_index) {
             if (memory_type[index].address > memory_type[behind_me_index].address) {
                 ++low_than_me;
             }
@@ -87,7 +95,7 @@ int main(int argc, char *argv[], char *envp[]) {
     }
 
     printf("show info from low to high address \n");
-    for(int i = 0; i < 13; ++i) {
+    for(int i = 0; i < test_range; ++i) {
         printf("rank :%d , address: %p, name : %s\n", i, memory_type[address_rank[i]].address, memory_type[address_rank[i]].name);
     }
 
