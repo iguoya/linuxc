@@ -2,6 +2,7 @@
 #include <wait.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/types.h>
 
 void judge_exit_status(int status) {
     if (WIFEXITED(status)) {

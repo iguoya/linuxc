@@ -4,6 +4,7 @@
 #include <wait.h>
 
 char *env[] = {"USER=snow", "PATH=/tmp", NULL};
+int i = 10000;
 
 int main() {
     pid_t pid;
