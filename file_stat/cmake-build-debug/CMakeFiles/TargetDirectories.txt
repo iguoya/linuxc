@@ -1,3 +1,0 @@
-/home/tiger/linuxc_yangzhu/file_stat/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/tiger/linuxc_yangzhu/file_stat/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/tiger/linuxc_yangzhu/file_stat/cmake-build-debug/CMakeFiles/file_stat.dir
