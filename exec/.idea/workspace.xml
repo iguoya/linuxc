@@ -12,16 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d11f117-d180-41c7-b689-0035b0c65043" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/exec.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fork_bomb/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memlayout/.idea/codeStyles/Project.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../memory_manage/.idea/codeStyles/Project.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../memory_manage/.idea/memory_manage.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../memory_manage/.idea/misc.xml" afterDir="false" />
@@ -29,15 +19,8 @@
       <change afterPath="$PROJECT_DIR$/../memory_manage/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../memory_manage/CMakeLists.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../memory_manage/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wait/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wait/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wait/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wait/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wait/.idea/wait.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wait/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../copy/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../copy/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.c" beforeDir="false" afterPath="$PROJECT_DIR$/environment.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wait/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wait/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wait/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../wait/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -59,7 +42,7 @@
       <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="225">
               <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -71,8 +54,8 @@
       <file leaf-file-name="environment.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/environment.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="195">
+              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -102,11 +85,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2549" />
-    <option name="y" value="342" />
-    <option name="width" value="1531" />
-    <option name="height" value="1010" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -170,7 +152,7 @@
       <updated>1530163017527</updated>
       <workItem from="1530163018756" duration="4195000" />
       <workItem from="1530194394907" duration="2540000" />
-      <workItem from="1530856879947" duration="712000" />
+      <workItem from="1530856879947" duration="1260000" />
     </task>
     <task id="LOCAL-00001" summary="execlp 进程空间及环境变量替换">
       <created>1530180603831</created>
@@ -183,13 +165,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7447000" />
+    <option name="totallyTimeSpent" value="7995000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2549" y="342" width="1531" height="1010" extended-state="0" />
+    <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3230356" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25612354" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="CMake" order="7" />
       <window_info anchor="right" id="LuaJ" order="3" />
@@ -197,7 +179,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.42027456" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31584948" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29250264" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47662485" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -279,7 +261,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="225">
           <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -289,8 +271,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/environment.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="195">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

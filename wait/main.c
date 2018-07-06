@@ -30,7 +30,7 @@ int main() {
     } else {
 //        printf("我是父进程:%d ,我在等待我的子进程结束，他的pid是：%d\n",getpid(), pid);
         if (wait(&status) == pid) {
-            printf("我是父进程:%d ,我等到了子进程：%d结束，子进程退出状态：--->", getpid(), pid, status);
+            printf("我是父进程:%d ,我等到了子进程：%d结束，子进程退出状态：%d--->", getpid(), pid, status);
             judge_exit_status(status);
 
             printf("---------------新希望 -----1------------\n");
@@ -41,7 +41,7 @@ int main() {
             } else {
 //        printf("我是父进程:%d ,我在等待我的子进程结束，他的pid是：%d\n",getpid(), pid);
                 if (wait(&status) == pid) {
-                    printf("我是父进程:%d ,我等到了子进程：%d结束，return 子进程退出状态：--->", getpid(), pid, status);
+                    printf("我是父进程:%d ,我等到了子进程：%d结束，return 子进程退出状态：%d--->", getpid(), pid, status);
                     judge_exit_status(status);
                 }
 
@@ -50,12 +50,11 @@ int main() {
                 if ((pid = fork()) == 0) {
                     printf("我是子进程: %d， 我的父进程:%d , 正常退出， exit \n", getpid(), getppid());
                     exit(36);
-                    exit(23);
                 } else {
 //        printf("我是父进程:%d ,我在等待我的子进程结束，他的pid是：%d\n",getpid(), pid);
                     if (wait(&status) == pid) {
 
-                        printf("我是父进程:%d ,我等到了子进程：%d结束，exit 子进程退出状态：：--->", getpid(), pid, status);
+                        printf("我是父进程:%d ,我等到了子进程：%d结束，exit 子进程退出状态：%d：--->", getpid(), pid, status);
                         judge_exit_status(status);
                     }
 
@@ -69,7 +68,7 @@ int main() {
                         printf("我是父进程:%d ,我在等待我的子进程结束，他的pid是：%d\n", getpid(), pid);
                         if (wait(&status) == pid) {
 
-                            printf("我是父进程:%d ,我等到了子进程：%d结束，abort() 子进程退出状态：--->", getpid(), pid, status);
+                            printf("我是父进程:%d ,我等到了子进程：%d结束，abort() 子进程退出状态：%d--->", getpid(), pid, status);
                             judge_exit_status(status);
 
 
@@ -80,11 +79,12 @@ int main() {
 
                                 printf("我是子进程: %d， 我的父进程:%d , 中断除0退出\n", getpid(), getppid());
                                 int m = 5 / 0;
+                                printf("%d", m);
                             } else {
                                 printf("我是父进程:%d ,我在等待我的子进程结束，他的pid是：%d\n", getpid(), pid);
                                 if (wait(&status) == pid) {
 
-                                    printf("我是父进程:%d ,我等到了子进程：%d结束， 中断除0 子进程退出状态：--->", getpid(), pid, status);
+                                    printf("我是父进程:%d ,我等到了子进程：%d结束， 中断除0 子进程退出状态：%d--->", getpid(), pid, status);
                                     judge_exit_status(status);
                                 }
 
@@ -102,10 +102,6 @@ int main() {
         }
 
     }
-
-
-
-
 
 
     return 0;
