@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/memory_manage.dir/main.c.o  -o memory_manage 
