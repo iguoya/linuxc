@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-
-#define BUFFSIZE 1024
+#include <string.h>
+#define BUFFSIZE 5
 
 int get_prime_number(int n) {
 
@@ -39,31 +39,33 @@ int main() {
     if ((pid = fork()) > 0) {
         //parent
         char *msg = "Let's do a little games: I say prime number;， son , you say Composite integer , Now Begin ...\n";
-        int n = 1;
-        while(n < 100) {
-            ++n;
-            int prime_number = get_prime_number(n);
-            if(prime_number == 0) {
-                continue;
-            }
-            sprintf(buf, "%d", prime_number);
-//            printf("convert integer:%d to str(%s) \n", prime_number, buf);
-            write(fd[1], buf, BUFFSIZE);
-            printf("I write num ：%d\n", prime_number);
-//            sleep(1);
-
-        }
-
-
-//        while ((n = read(fd[0], buf, BUFFSIZE)) > 0) {
-//            printf("I(PID:%d) receive from my son' number :%d Show it to you \n", getpid(), buf);
-//            sleep(1);
+//        int n = 1;
+//        while(n < 100) {
+//            ++n;
+//            int prime_number = get_prime_number(n);
+//            if(prime_number == 0) {
+//                continue;
+//            }
+//            sprintf(buf, "%d", prime_number);
+//            printf("I write num ：%d\n", prime_number);
+//
+////            printf("convert integer:%d to str(%s) \n", prime_number, buf);
+//            write(fd[1], buf, BUFFSIZE);
 //        }
+
+        close(fd[0]);
+//        memset(buf, 0, BUFFSIZE);
+        while ((n = read(STDIN_FILENO, buf, BUFFSIZE)) > 0) {
+            write(fd[1], buf, n);
+        }
 
     } else {
         //Child
-        while((n = read(fd[0], buf, BUFFSIZE)) > 0) {
-            printf("I(PID:%d) received My Parent's number: %s\n", getpid(), buf);
+        close(fd[1]);
+        while ((n = read(fd[0], buf, BUFFSIZE)) > 0) {
+            write(STDOUT_FILENO, "receive from parent: ", 21);
+            write(STDOUT_FILENO, buf, n);
+//            printf("I(PID:%d) received My Parent's number: %s\n", getpid(), buf);
 //            int prime_number = atoi(buf);
 //            sprintf(buf, "%d", prime_number * 2);
 //            write(fd[1], buf, BUFFSIZE);
