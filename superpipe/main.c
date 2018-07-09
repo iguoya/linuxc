@@ -19,10 +19,6 @@ int get_prime_number(int n) {
             } else {
                 continue;
             }
-        }
-//        printf("Now I test is_prime_number: %d \n", is_prime_number);
-        if (flag == 1) {
-            return is_prime_number;
         } else {
             return 0;
         }
