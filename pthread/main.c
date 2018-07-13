@@ -41,10 +41,12 @@ int main() {
 
 //    int g2 = 0;
 
-    printf("I am in main function\n");
+//    printf("I am in main function\n");
     ret = pthread_create(&pthread_1, NULL, (void*)task, (void*) a1);
+    printf("pthread1 is created: return value :%d \n", ret);
     printf("now two task 's sum is %d\n", a1->count+a2->count);
     ret = pthread_create(&pthread_2, NULL, (void*)task, (void*) a2);
+    printf("pthread2 is created: return value :%d \n", ret);
     printf("now two task 's sum is %d\n", a1->count+a2->count);
 
     int tmp = pthread_join(pthread_1, &return_val);
@@ -64,8 +66,6 @@ int main() {
     printf("now two task 's sum is %d\n", a1->count+a2->count);
 
     getchar();
-//
-
 
 
     printf("Hello, World!\n");
