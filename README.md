@@ -7,5 +7,5 @@
 | ---- |-----| :-----:|
 | YZ    | Linux下C语言应用编程    | 杨铸 |
 | YZD   | Linux高级程序设计     |   杨宗德 |
-| BLP   | Linux程序设计      |   Neil Matthew ， Rechard Stones |
+| BLP   | Linux程序设计 (Beginning Linux Programming)     |   Neil Matthew ， Rechard Stones |
 
